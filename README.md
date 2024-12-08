@@ -34,3 +34,8 @@ Simuleringen är tillgänglig i webbläsaren på http://localhost:8521.
 Översikt
 Arkitektur
 Agentroller
+
+## Metodologi
+Agil utveckling: Arbeta i sprintar där varje delprojekt adresseras iterativt.
+Versionskontroll: Använd GitHub för att dokumentera, spåra och hantera kodändringar.
+Dokumentation: Fokusera på att beskriva varje delprojekt tydligt, med tekniska detaljer och framsteg.
