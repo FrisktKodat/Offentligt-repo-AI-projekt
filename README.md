@@ -14,6 +14,15 @@ Detta projekt syftar till att simulera en AI-driven arbetsmiljö där agenter me
 - **Delprojekt 4:** Integration av testning.
 - **Delprojekt 5:** Projektledning och koordinering.
 
+- **CrewAI + Docker:** Projektet använder CrewAI för att hantera agenternas roller och samarbete. Varje agent körs i en isolerad Docker-container för skalbarhet.
+- **OpenAI API:** Alla agenter använder OpenAI API från början för att utföra sina uppgifter. Detta ger avancerad AI-funktionalitet utan behov av att utveckla egna modeller.
+
+## Teknisk implementation
+
+- CrewAI hanterar orkestreringen av agenterna och deras samarbete.
+- OpenAI API används för att generera kod, analysera text och utföra andra AI-relaterade uppgifter.
+- Docker används för att isolera och skala agenternas miljö.
+
 ## Installation
 1. Klona repositoryt:
    ```bash

@@ -21,18 +21,18 @@ Detta delprojekt fokuserar på att skapa de första AI-agenterna som ska simuler
 ---
 
 ## Teknisk Implementation
-### **1. Skapa en Python-klass för utvecklaragenten**
-- Implementera klassen `DeveloperAgent` i filen `agents/developer.py`.
-- Exempel:
-    ```python
-    class DeveloperAgent:
-        def __init__(self, name: str):
-            self.name = name
 
-        def generate_code(self, task_description: str) -> str:
-            # Placeholder för AI-generering
-            return f"# Code generated for: {task_description}"
-    ```
+### Användning av OpenAI API
+Varje agent använder OpenAI API för att utföra sina uppgifter. Till exempel:
+- **Utvecklaragenten:** Genererar Python-kod baserat på specifikationer.
+- **Testaren:** Analyserar kod och genererar testfall.
+- **Projektledaren:** Ger instruktioner till andra agenter och sammanställer rapporter.
+
+### Docker-konfiguration
+Alla agenter körs i Docker-containrar. En typisk Docker-konfiguration inkluderar:
+- En Python-miljö med CrewAI och OpenAI-klienten installerad.
+- Miljövariabel för OpenAI API-nyckel: `OPENAI_API_KEY`.
+
 
 ### **2. API för utvecklaragenten**
 - Skapa en REST-API-endpoint i `api/routes/developer_routes.py`.

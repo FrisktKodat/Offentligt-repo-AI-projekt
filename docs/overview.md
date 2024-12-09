@@ -12,7 +12,8 @@ Detta projekt utforskar användningen av AI och virtualisering för att simulera
 - Testa skalbarhet och samordning mellan flera agenter.
 
 ## Teknologier
-- **Backend:** Python, FastAPI
-- **Virtualisering:** Docker, TrueNAS Scale
-- **Visualisering:** Mesa
-- **AI:** OpenAI API (ChatGPT och Codex)
+
+- **CrewAI:** För att hantera agenternas roller, samarbete och delegation.
+- **Docker:** För att köra varje agent i en isolerad miljö och möjliggöra enkel skalbarhet.
+- **OpenAI API:** För att tillhandahålla AI-funktionalitet till agenterna.
+- **Python och FastAPI:** För att bygga backend och skapa API-endpoints.

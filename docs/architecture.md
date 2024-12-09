@@ -13,6 +13,16 @@ Systemet är uppdelat i flera komponenter:
   - `tester.py`: Utför automatiserade tester.
   - `project_manager.py`: Koordinerar arbetsflödet.
 
+### CrewAI
+CrewAI hanterar agenter som simulerar roller som utvecklare, testare och projektledare. Det används för att definiera agenternas beteenden och orkestrera arbetsflöden.
+
+### Docker
+Varje agent körs i en separat Docker-container, vilket möjliggör isolering och skalbarhet. Docker Compose används för att hantera flera containrar.
+
+### OpenAI API
+Agenterna använder OpenAI API från början för att utföra sina uppgifter, såsom kodgenerering och textbearbetning. Detta säkerställer hög AI-prestanda och flexibilitet.
+
+
 - **API:**
   Backend byggd med FastAPI, hanterar agenternas kommunikation.
 
