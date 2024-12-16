@@ -17,3 +17,11 @@ Detta projekt utforskar användningen av AI och virtualisering för att simulera
 - **Docker:** För att köra varje agent i en isolerad miljö och möjliggöra enkel skalbarhet.
 - **OpenAI API:** För att tillhandahålla AI-funktionalitet till agenterna.
 - **Python och FastAPI:** För att bygga backend och skapa API-endpoints.
+
+## YAML-baserad konfiguration
+
+All konfiguration för agenter och uppgifter kommer att definieras i YAML-filer, som är kompatibla med CrewAI.
+
+Exempel:
+agents.yaml: Definierar agenter och deras egenskaper.
+tasks.yaml: Specificerar uppgifter och deras beroenden.

@@ -14,7 +14,7 @@ Systemet är uppdelat i flera komponenter:
   - `project_manager.py`: Koordinerar arbetsflödet.
 
 ### CrewAI
-CrewAI hanterar agenter som simulerar roller som utvecklare, testare och projektledare. Det används för att definiera agenternas beteenden och orkestrera arbetsflöden.
+CrewAI hanterar agenter som simulerar roller som utvecklare, testare och projektledare. Det används för att definiera agenternas beteenden och orkestrera arbetsflöden. All konfiguration för agenter och uppgifter kommer att definieras i YAML-filer, som är kompatibla med CrewAI.
 
 ### Docker
 Varje agent körs i en separat Docker-container, vilket möjliggör isolering och skalbarhet. Docker Compose används för att hantera flera containrar.
